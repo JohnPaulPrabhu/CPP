@@ -13,5 +13,7 @@ int main(){
     string a = "John";
     // std::string name = "John";
     cout << n << " " << a <<endl;
+
+    // This is just a error statement used to print the error statement
     cerr << "This is the example error message" << endl;
 }
