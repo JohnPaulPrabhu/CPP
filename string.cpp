@@ -51,16 +51,27 @@ int main(){
     /*
     Splitting the string
     */
-   string check = "Checking the split function";
-   vector<string> words;
-   istringstream iss(check);
+    string check = "Checking the split function";
+    vector<string> words;
+    istringstream iss(check);
 
-   for(string word; iss >> word;){
-    words.push_back(word);
-   }
-   for(const auto& word : words){
-    cout << word << endl;
-   }
+    for(string word; iss >> word;){
+        words.push_back(word);
+    }
+    for(string word : words){
+        cout << word << endl;
+    }
+
+    // Join the strings
+    vector<string> list = {"Hello", "World!"};
+    ostringstream os;
+    for(int i=0;i<list.size();++i){
+        if (i > 0) os << " ";
+        os << list[i];
+
+    }
+    string combined_text = os.str();
+    cout << combined_text << endl;
 
     return 0;
 }
