@@ -12,7 +12,8 @@ using namespace std;
 
 int main(){
     // Float will have 32-bit precision
-    float f=1.01;
+    // float f=1.01;
+    float f {5e5};
 
     // double has 64-bin precision
     double ff = 1.000000000000001;
@@ -33,5 +34,5 @@ int main(){
     // There is a catch in adding floating value
     double check=0.1;
 
-    cout << format("Value is {}", check+check+check);
+    cout << format("Value is {}\n", check+check+check);
 }

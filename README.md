@@ -18,5 +18,5 @@
     - 0.1+0.1+0.1 is not necessarily equal to 0.3 due to precision limitations
         - long double 0.30000000000000001665
         - double 0.30000000000000004
-    - If precision is criical, it is better to use integer instead of floating to avoid precision loss
-    
+    - If precision is critical, it is better to use integer instead of floating to avoid precision loss
+    - If scaling is important then use float value
