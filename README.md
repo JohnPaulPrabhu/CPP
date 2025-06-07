@@ -20,3 +20,6 @@
         - double 0.30000000000000004
     - If precision is critical, it is better to use integer instead of floating to avoid precision loss
     - If scaling is important then use float value
+2. It is not possible to initialize the array of characters using "const char c[];" in struct.
+    - We can initialize it by manually allocating memory for it. But that is not recommended.
+    - Alternatively we can use pointer "const char* c {};"
