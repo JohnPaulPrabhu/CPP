@@ -23,3 +23,7 @@
 2. It is not possible to initialize the array of characters using "const char c[];" in struct.
     - We can initialize it by manually allocating memory for it. But that is not recommended.
     - Alternatively we can use pointer "const char* c {};"
+3. When function is assined as const function, you can change any value in the body of the function
+    - When you are creating a object for a class, and you are assinging a const qualifier to the object, there are two things can happen
+     1. If you assign const qualifier to the funcion which is called by object, then code will run without issue
+     2. If there is no const qualifier to the function, then the code will throw an error
